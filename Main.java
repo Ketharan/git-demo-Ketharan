@@ -20,7 +20,7 @@ public class GIT {
         int b;
         String operation;
         int answer;
-        Scanner scan = new Scanner(System.in);
+        Scanner scan = new Scanner(System.in); // 'to make eacce comment'
         System.out.println("welcome to my calculator");
         System.out.println("Enter first number :");
         a = scan.nextInt();
@@ -32,12 +32,16 @@ public class GIT {
         if ("+".equals(operation)){
             answer = add(a,b);
             System.out.println("Answer is " + answer);
-        }else{
-            System.out.println("Unsupported operation");
+        }else if("-".equals(operation)){
+	    answer = subtract(a,b);
+            System.out.println(answer);
         }
         
     }
     public static int add(int a, int b){
         return a+b;
+    }
+    public static int add(int a, int b){
+	return a-b;
     }
 }
